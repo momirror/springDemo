@@ -2,14 +2,18 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="hello" class="com.msp.spring.bean.Hello">
-	<property name="name" value="spencer2"></property>
-	<property name="age" value="10"></property>
-</bean>
 
 <bean id="car" class="com.msp.spring.bean.Car">
-	<constructor-arg value="Audi" index="2"></constructor-arg>
+	<constructor-arg value="Audi22" index="2"></constructor-arg>
 	<constructor-arg value="1000000" index="1"></constructor-arg>
 	<constructor-arg value="shangHai" index="0"></constructor-arg>
 </bean>
+
+ <bean id="student" class="com.msp.spring.bean.Student">
+    	<property name="name" value="zhangsan"></property>
+    	<property name="sex" value="male"></property>
+    	<property name="age" value="18"></property>
+    	<property name="car" ref="car"></property>
+  </bean>
+
 </beans>
