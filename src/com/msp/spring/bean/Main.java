@@ -24,7 +24,10 @@ public class Main {
 		 System.out.println(car.toString());
 		 
 		 ctx = new ClassPathXmlApplicationContext("studentContext.xml");
-		 Student stu = (Student)ctx.getBean(Student.class); 
+//		 Student stu = (Student)ctx.getBean(Student.class); 
+//		 System.out.println(stu);
+		 
+		 Student stu = (Student)ctx.getBean("student2"); 
 		 System.out.println(stu);
 		 
 		
