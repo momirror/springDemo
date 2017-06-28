@@ -10,6 +10,9 @@ public class Main {
 		Calculator calculator = ctx.getBean(Calculator.class);
 		int result = calculator.add(3, 8);
 		System.out.println("result: "+result);
+		
+		result = calculator.mul(2, 7);
+		System.out.println("result: "+result);
 
 	}
 
