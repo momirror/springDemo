@@ -10,6 +10,7 @@
 		<config>src/applicationContext.xml</config>
 		<config>src/studentContext.xml</config>
 		<config>src/template-inject.xml</config>
+		<config>src/aop-imp.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
